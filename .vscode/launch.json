@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "name": "Debug with Meson",
+            "request": "launch",
+            "program": "./build/prog",
+            "cwd": "${workspaceRoot}",
+            "type": "cppdbg",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "preLaunchTask": "build debug meson"
+        }
+    ]
+}

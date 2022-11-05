@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "complex.h": "c",
+        "stdio.h": "c",
+        "math.h": "c",
+        "random": "c",
+        "stdbool.h": "c",
+        "float.h": "c",
+        "bezdist.h": "c",
+        "svg_path.h": "c",
+        "graphic.h": "c"
+    },
+    "cmake.configureOnOpen": false
+}

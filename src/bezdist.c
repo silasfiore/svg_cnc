@@ -161,7 +161,7 @@ double bezdist(double complex q, int n, double complex *ctrl) {
     double work[2 * n - 2];
     double rootfcn[2 * n - 2];
 
-    double dist, d, u;
+    double dist, d;  //u;
     int j;
 
     rfcn(n, q, ctrl, rootfcn);
@@ -170,12 +170,12 @@ double bezdist(double complex q, int n, double complex *ctrl) {
     }
     ridx = 0;
     ppa((2 * n - 2), &ridx, roots, work, rootfcn, 0, 1);
-    u = 0.0;
+    //u = 0.0;
     d = cabs(ctrl[0] - q);
 
     dist = cabs(ctrl[n - 1] - q);
     if (dist < d) {
-        u = 1.0;
+        //u = 1.0;
         d = dist;
     }
 
@@ -183,7 +183,7 @@ double bezdist(double complex q, int n, double complex *ctrl) {
         if (roots[j] > 0.0 && roots[j] < 1.0) {
             dist = cabs(bez(roots[j], n, ctrl) - q);
             if (dist < d) {
-                u = roots[j];
+                //u = roots[j];
                 d = dist;
             }
         }
