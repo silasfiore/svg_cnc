@@ -359,9 +359,9 @@ bool update_M(machine_state *ms, bool relative) {
 
         ms->next.ders[0] = ms->next.ctrl[1] - ms->next.ctrl[0];
 
-        ms->next.arclen = cabsf(ms->next.ders[0]);
+        //ms->next.arclen = cabsf(ms->next.ders[0]);
 
-        //ms->next.arclen = 0.0f;
+        ms->next.arclen = 0.0f;
 
         // increment the string index
         ms->inext += offset;

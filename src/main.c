@@ -1,5 +1,6 @@
 //libraries
 #include <complex.h>
+#include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,7 +16,7 @@ int main(int argc, char **argv) {
 
         machine_state ms1;
         machine_state ms2;
-        float vmax = 50;
+        float vmax = 10;
 
         if (argc > 2) {
             float p1, p2, v1, v2;
