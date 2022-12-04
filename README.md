@@ -42,4 +42,7 @@ The main control loop is structured as follows:\
 ```
 ## qbez.c
 
-This file contains the routines that approximate arcs and cubics by composite quadratic bezier curves, compute the arclength of the segment and evaluate the segment given a desired traversed arclength. The decomposition functions call the _bezdist_ program to evaluate whether the current approximation is precise enough. 
+This file contains the routines that approximate arcs and cubics by composite quadratic bezier curves, compute the arclength of the segment and evaluate the segment given a desired traversed arclength. The decomposition functions call the _bezdist_ program to evaluate whether the current approximation is precise enough.
+
+
+![](sample_trajectory.gif)
